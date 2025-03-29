@@ -1,9 +1,14 @@
 # Failure Analysis and Materials Characterization of Adjustable Metal Rings for Enhanced Durability
-**University of California: Los Angeles** Materials Science and Engineering Capstone Project  
-  
-  This repository will provide this project's abstract and a brief overview of its results. The results consist of: General Dimensions, Hardness Tests, Microstructural and Compositional Analysis, Fatigue Tests, and Corrosion Tests.  
-    
-  This work is done by Christopher Santiago Garcia, Sakshi Agte, Maria Carrillo, Nehmat Sandhu, and Ashwyn Yeo.
+
+**Christopher Santiago Garcia** | [christophersantiago910@gmail.com](mailto:christophersantiago910@gmail.com) | [LinkedIn](https://www.linkedin.com/in/christopher-santiago-garcia)
+
+**University of California: Los Angeles**  
+*Materials Science and Engineering Capstone Project*
+
+This repository will provide this project's abstract and a brief overview of its results. The results consist of: General Dimensions, Hardness Tests, Microstructural and Compositional Analysis, Fatigue Tests, and Corrosion Tests.
+
+This work is done by **Christopher Santiago Garcia**, **Sakshi Agte**, **Maria Carrillo**, **Nehmat Sandhu**, and **Ashwyn Yeo**.
+
 
 
 ## Abstract
@@ -104,3 +109,23 @@ This projects goal is to enhance the usability and fatigue durability of the rin
 | Fe      | 0.7842%         |
 | Mo      | 0.7247%         |
 
+### Yield Strength from Tabor's Relation and Grain Size
+| Ring Plating | Average (HV) | Tabor’s Predicted YS (MPa) | Hall-Petch Predicted YS (MPa) | Reference YS (MPa) |
+|:--------------:|:--------------:|:-----------------------------:|:-------------------------------:|:-------------------------:|
+| Gold         | 150.8        | 50.3                        | 30.0                          | 70                      |
+| Silver       | 148.4        | 49.5                        | 30.1                          | 70                      |
+
+### Fatigue Tests from Linear Actuator System
+| Ring Plating | Gold Sample # of Cycles until Failure | Silver Sample # of Cycles until Failure |
+|:--------------:|:---------------------------------------:|:-----------------------------------------:|
+| Test #1      | 515                                   | 559                                     |
+| Test #2      | 338                                   | 365                                     |
+| Test #3      | 414                                   | 257                                     |
+
+## Conclusions
+**Comparison of Experimental and Theoretical Data for α-Brass**
+| Property             | Experimental Data (Silver and Gold) | Theoretical Data of α-Brass |
+|:----------------------:|:--------------------------------------:|:-----------------------------------:|
+| XRF                  | 65% Copper & 33% Zinc                | 64% Copper & 33% Zinc             |
+| Vickers Hardness     | ~ 150 HV                             | 80–140 HV                         |
+| Density Calculation  | ~ 9.70 g/cm^3                         | 8.40 g/cm^3                       |
