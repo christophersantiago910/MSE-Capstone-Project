@@ -199,7 +199,7 @@ This projects goal is to enhance the usability and fatigue durability of the rin
 - Scanning Electron Microscopy (SEM)
 - Optical Microscopy (OM)
 - Water Displacement Method (Density)
-- Custom Fatigue Testing Jig
+- Fatigue Test
 - Tabor’s and Hall-Petch Yield Strength Calculations
 
 ---
