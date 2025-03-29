@@ -183,11 +183,11 @@ This projects goal is to enhance the usability and fatigue durability of the rin
 
 **Comparison of Experimental and Theoretical Data for α-Brass**
 
-| Property             | Experimental Data (Silver and Gold) | Theoretical Data of α-Brass [24] |
+| Property             | Experimental Data (Silver and Gold) | Theoretical Data of α-Brass |
 |----------------------|--------------------------------------|-----------------------------------|
 | XRF                  | 65% Copper & 33% Zinc                | 64% Copper & 33% Zinc             |
 | Vickers Hardness     | ~ 150 HV                             | 80–140 HV                         |
-| Density Calculation  | ~ 9.70 g/cm^3                         | 8.40 g/cm^3                       |
+| Density Calculation  | ~ 9.70 g/cm³                         | 8.40 g/cm³                       |
 
 
 ---
