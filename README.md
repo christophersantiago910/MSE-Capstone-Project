@@ -1,4 +1,4 @@
-# Failure Analysis and Materials Characterization of Adjustable Metal Rings for Enhanced Durability
+# Adjustable Metal Rings – Failure Analysis, Characterization & Optimization
 
 **Christopher Santiago Garcia** | [christophersantiago910@gmail.com](mailto:christophersantiago910@gmail.com) | [LinkedIn](https://www.linkedin.com/in/christopher-santiago-garcia)
 
@@ -8,202 +8,189 @@
 ---
 
 ## Table of Contents
-- [Abstract](#abstract)
-- [Design Goal](#design-goal)
-- [General Dimensions](#general-dimensions)
-- [Mass & Density](#mass--density)
-- [Vickers Hardness](#vickers-hardness)
-- [Plating Thickness](#plating-thickness)
-- [XRF Analysis](#xrf-analysis)
-- [Yield Strength Predictions](#yield-strength-predictions)
-- [Fatigue Tests](#fatigue-tests)
-- [Conclusions](#conclusions)
-- [Technologies & Methods Used](#technologies--methods-used)
+- [Project Overview](#project-overview)
+- [Phase I: Initial Characterization (MSE 140A)](#phase-i-initial-characterization-mse-140a)
+  - [Objectives](#objectives)
+  - [Experimental Methods](#experimental-methods)
+  - [Key Results](#key-results)
+- [Phase II: Optimization & Simulation (MSE 140B)](#phase-ii-optimization--simulation-mse-140b)
+  - [Annealing Study](#annealing-study)
+  - [Grain Size Analysis](#grain-size-analysis)
+  - [Finite Element Analysis](#finite-element-analysis)
+- [Material Screening & Selection](#material-screening--selection)
+- [Key Takeaways](#key-takeaways)
+- [Directory Structure](#directory-structure)
+- [Authors](#authors)
 
 ---
 
-## Abstract
+## Project Overview
 
-Jewelry is an ancient form of adornment that initially consisted of stones, animal teeth, bones, and shells. Now, it is dominated by metallic compositions, with gold being the most prominent. Our design goal for this capstone project is to improve the fatigue life and durability of our metals rings to enhance usability despite multiple adjustments. We will use advanced mechanical testing and materials characterization to analyze the properties of gold and silver plated rings. Specifically, a combination of hardness, fatigue, microstructural, and compositional analyses will be performed. Through X-ray fluorescence, Vickers Hardness Testing, and density experimentation, we determined that the bulk material of the rings is 𝛼- Brass. X-ray fluorescence analysis of the rings concluded that the rings composition was 65% copper and 33% zinc, which aligns with the composition of 𝛼- Brass. The Vickers hardness value (~150 HV) and the density value (9.70 g/cm³) of our rings further confirm that the material is 𝛼-brass. Through scanning electron microscopy imaging and optical microscope imaging, we were able to measure the average plating thickness for the silver and gold samples. For the gold sample, we obtained values of 15.24 ± 8.25 μm and 11.39 ± 3.18 μm from optical microscope imaging and scanning electron microscopy, respectively. For the silver sample, we obtained values of 22.27 ± 5.29 μm and 21.30 ± 7.00 μm from optical microscope imaging and scanning electron microscopy, respectively. Overall, the average plating thickness values were found to be consistent across optical microscope imaging and scanning electron microscopy imaging. Heading into the next quarter, we will continue our fatigue and corrosion testing setups and make the necessary adjustments to achieve our design goal. To reach this goal, we plan to perform a combination of annealing and shot peening/cold-working techniques.
-
----
-
-## Design Goal
-
-This projects goal is to enhance the usability and fatigue durability of the rings so that they can be used for a longer period of time despite multiple adjustments.
+This repository presents a comprehensive study of failure modes and material improvements for low-cost, gold- and silver-plated adjustable brass rings. These rings suffer from premature failure due to repeated mechanical deformation during size adjustments. Over two academic quarters, this project explored the mechanical behavior, compositional makeup, microstructure, and fatigue performance of these rings, followed by processing optimizations using annealing and design validation via finite element simulations.
 
 ---
 
-## General Dimensions
+## Phase I: Initial Characterization (MSE 140A)
 
-### Gold Rings
-| Property                       | Average Value (mm) |
-|--------------------------------|--------------------|
-| Outer diameter                 | 19.43              |
-| Inner diameter                 | 18.50              |
-| Flat head diameter            | 12.00              |
-| Flat head thickness           | 0.40               |
+### Objectives
+- Identify the base metal and coating layers of the rings.
+- Quantify hardness, density, and plating thickness.
+- Analyze microstructure and determine grain size.
+- Construct a fatigue testing setup and establish baseline durability.
 
-### Silver Rings
-| Property                       | Average Value (mm) |
-|--------------------------------|--------------------|
-| Outer diameter                 | 19.20              |
-| Inner diameter                 | 18.17              |
-| Flat head diameter            | 12.00              |
-| Flat head thickness           | 0.40               |
+### Experimental Methods
 
----
+- **X-ray Fluorescence (XRF):** Used to determine the ring’s base composition as α-brass (65% Cu / 35% Zn).
+- **Vickers Hardness Testing (ASTM E92):** Determined mechanical hardness of plated rings.
+- **Density Measurement (ASTM E617):** Compared calculated density to known brass values.
+- **Optical Microscopy & SEM (ASTM B487, B748):** Measured plating thickness and surface integrity.
+- **Fatigue Testing:** Custom Arduino-controlled linear actuator applied repeated uniaxial tensile loads to simulate daily ring resizing.
 
-## Mass & Density
+### Key Results
 
-### Mass of Rings
-| Material | Sample #1 | Sample #2 | Sample #3 | Average | Std Dev |
-|----------|-----------|-----------|-----------|---------|---------|
-| Gold     | 1.4767    | 1.4757    | 1.4573    | 1.4699  | 0.0192  |
-| Silver   | 1.4669    | 1.4490    | 1.4573    | 1.4581  | 0.0089  |
+| Test                          | Gold-Plated Ring     | Silver-Plated Ring   |
+|-------------------------------|-----------------------|------------------------|
+| Vickers Hardness (HV)         | 150.8 ± 10.0          | 148.4 ± 4.1            |
+| Average Density (g/cm³)       | 9.799                 | 9.720                  |
+| OM Plating Thickness (μm)     | 15.24 ± 8.25          | 22.27 ± 5.29           |
+| SEM Plating Thickness (μm)    | 11.39 ± 3.18          | 21.30 ± 7.00           |
+| Fatigue Life (baseline)       | ~343 cycles           | ~343 cycles            |
 
-### ΔV and Density
-| Material | Sample #1 | Sample #2 | Sample #3 | Avg   | Std Dev |
-|----------|-----------|-----------|-----------|--------|---------|
-| Gold ΔV (mL)      | 0.15 | 0.15 | 0.15 | - | - |
-| Gold Density (g/cm³) | 9.845 | 9.838 | 9.715 | 9.799 | 0.060 |
-| Silver ΔV (mL)    | 0.15 | 0.15 | 0.15 | - | - |
-| Silver Density (g/cm³) | 9.779 | 9.660 | 9.722 | 9.720 | 0.049 |
+Figures:
+- `images/gold_om.png`, `images/silver_om.png`
+- `images/gold_sem.png`, `images/silver_sem.png`
 
 ---
 
-## Vickers Hardness
+## Phase II: Optimization & Simulation (MSE 140B)
 
-| Sample | Average (HV) | Std Dev (HV) |
-|--------|--------------|--------------|
-| Gold   | 150.8        | 10.0         |
-| Silver | 148.4        | 4.1          |
+### Annealing Study
 
----
+Objective: Determine how controlled heat treatments affect ductility, grain structure, and fatigue life.
 
-## Plating Thickness
+**Annealing Parameters:**
+- **Temperature:** 550°C (to avoid β-phase in brass)
+- **Time:** 1, 5, 10, 15, 30, 45 minutes
+- **Cooling:** Air-cooled
 
-### Gold Samples – OM Imaging
+**Hardness vs Time**
 
-| Sample # | Avg Thickness (µm) | Std Dev |
-|----------|--------------------|---------|
-| 1        | 8.521              | 3.600   |
-| 2        | 26.201             | 3.256   |
-| 3        | 12.354             | 0.383   |
-| **Overall** | **15.244**         | **8.251** |
+| Annealing Time (min) | Hardness (HV) |
+|----------------------|----------------|
+| 15                   | 161.3          |
+| 30                   | 128.3          |
+| 45                   | 70.7           |
 
-### Silver Samples – OM Imaging
+**Fatigue Life (Cycles)**
 
-| Sample # | Avg Thickness (µm) | Std Dev |
-|----------|--------------------|---------|
-| 1        | 21.264             | 2.371   |
-| 2        | 23.469             | 7.713   |
-| **Overall** | **22.266**         | **5.285** |
+| Time (min) | Gold | Silver |
+|------------|------|--------|
+| 1          | 188  | 450    |
+| 5          | 270  | 465    |
+| 10         | 483  | 236    |
+| 15         | 614  | 417    |
+| 30         | 119  | 316    |
+| 45         | 136  | 360    |
 
-### Gold Samples – SEM Imaging
-
-| Sample # | Avg Thickness (µm) | Std Dev |
-|----------|--------------------|---------|
-| 1        | 8.189              | 0.173   |
-| 2        | 14.513             | 3.133   |
-| 3        | 11.458             | 0.775   |
-| **Overall** | **11.387**         | **3.183** |
-
-### Silver Samples – SEM Imaging
-
-| Sample # | Avg Thickness (µm) | Std Dev |
-|----------|--------------------|---------|
-| 1        | 18.031             | 0.171   |
-| 2        | 30.392             | 3.490   |
-| 3        | 15.466             | 0.501   |
-| **Overall** | **21.296**         | **7.004** |
+Figures:
+- `images/fatigue_vs_time.png`
 
 ---
 
-## XRF Analysis
+### Grain Size Analysis
 
-### Unembedded Silver
+- Grain sizes were calculated via the intercept method (ASTM E112).
+- Etched samples revealed increasing grain diameter at prolonged annealing times.
+- Yield strength estimates were calculated via the Hall-Petch relationship and Tabor’s relation.
 
-| Element | Concentration % |
-|---------|-----------------|
-| Cu      | 93.81%          |
-| Zn      | 5.50%           |
-| Mo      | 0.37%           |
-| Sn      | 0.16%           |
-
-### Unembedded Gold
-
-| Element | Concentration % |
-|---------|-----------------|
-| Cu      | 80.97%          |
-| Ni      | 15.77%          |
-| Zn      | 2.95%           |
-| Mo      | 0.299%          |
-
-### Embedded Gold
-
-| Element | Concentration % |
-|---------|-----------------|
-| Cu      | 63.57%          |
-| Zn      | 32.52%          |
-| Fe      | 1.74%           |
-| Mo      | 0.89%           |
-
-### Embedded Silver
-
-| Element | Concentration % |
-|---------|-----------------|
-| Cu      | 65.46%          |
-| Zn      | 32.53%          |
-| Fe      | 0.7842%         |
-| Mo      | 0.7247%         |
+| Time (min) | Grain Size (μm) | Yield Strength (MPa) (Hall-Petch) |
+|------------|------------------|------------------------------------|
+| 15         | 36.24            | 91.66                              |
+| 30         | 29.63            | 98.56                              |
+| 45         | 43.89            | 85.77                              |
 
 ---
 
-## Yield Strength Predictions
+### Finite Element Analysis
 
-| Ring Plating | Average (HV) | Tabor’s YS (MPa) | Hall-Petch YS (MPa) | Reference YS (MPa) |
-|--------------|--------------|------------------|----------------------|---------------------|
-| Gold         | 150.8        | 50.3             | 30.0                 | 70                  |
-| Silver       | 148.4        | 49.5             | 30.1                 | 70                  |
+Used SolidWorks Simulation to replicate the experimental setup:
 
----
+- **Static Simulation:** Applied 20 N force to ring arm.
+- **Fatigue Life Prediction:** Simulated number of cycles before failure.
 
-## Fatigue Tests
+**Simulated Cycles to Failure**
 
-| Ring Plating | Gold Cycles to Failure | Silver Cycles to Failure |
-|--------------|------------------------|---------------------------|
-| Test #1      | 515                    | 559                       |
-| Test #2      | 338                    | 365                       |
-| Test #3      | 414                    | 257                       |
+| Material     | Cycles |
+|--------------|--------|
+| Brass        | 257    |
+| Titanium     | 452    |
+| Steel        | 2393   |
+| Aluminum     | 108    |
+| Zinc         | 170    |
+| Silver       | 114    |
 
----
-
-## Conclusions
-
-**Comparison of Experimental and Theoretical Data for α-Brass**
-
-| Property             | Experimental Data (Silver and Gold) | Theoretical Data of α-Brass |
-|----------------------|--------------------------------------|-----------------------------------|
-| XRF                  | 65% Copper & 33% Zinc                | 64% Copper & 33% Zinc             |
-| Vickers Hardness     | ~ 150 HV                             | 80–140 HV                         |
-| Density Calculation  | ~ 9.70 g/cm³                         | 8.40 g/cm³                       |
-
+Figures:
+- `images/static_stress.png`
+- `images/fatigue_life.png`
 
 ---
 
-## Technologies & Methods Used
+## Material Screening & Selection
 
-- Vickers Hardness Testing
-- X-ray Fluorescence (XRF)
-- Scanning Electron Microscopy (SEM)
-- Optical Microscopy (OM)
-- Water Displacement Method (Density)
-- Fatigue Test
-- Tabor’s and Hall-Petch Yield Strength Calculations
+Used Ashby plots to screen and rank materials for:
+- Minimum 50 HV hardness
+- Minimum 100 MPa fatigue strength @ 10⁷ cycles
+- Minimum 10% elongation
+
+Final materials were ranked using a Figure of Merit:
+
+| Material        | FoM (Normalized) |
+|-----------------|------------------|
+| Brass           | 1.000            |
+| Titanium        | 0.849            |
+| Stainless Steel | 0.574            |
+| Low Carbon Steel | 0.098           |
+| Aluminum Alloy  | 0.021            |
+| Zinc Alloy      | 0.011            |
+| Sterling Silver | 0.000            |
+
+Figures:
+- `images/ashby_hardness.png`
+- `images/ashby_fatigue.png`
 
 ---
 
-**Team Members:**  
-Christopher Santiago Garcia, Sakshi Agte, Maria Carrillo, Nehmat Sandhu, Ashwyn Yeo
+## Key Takeaways
+
+- **Annealing** significantly improves fatigue life if optimized (~15 min best).
+- **Silver rings** show more consistent fatigue performance; gold rings are more sensitive to heat treatment.
+- **Brass** remains the best choice for balancing cost, machinability, and performance.
+- **Simulation and experiment** closely matched (257 vs 256 cycles).
+- **Material ranking** confirmed brass outperforms others in cost-performance tradeoff.
+
+---
+
+## Directory Structure
+
+```
+├── images/                 # Simulation, SEM, OM, Ashby plots
+├── data/                   # Raw & processed experimental results
+├── scripts/                # Python scripts for Ashby plots
+├── report/                 # Final report PDFs, figures
+└── README.md               # This file
+```
+
+---
+
+## Authors
+
+Christopher Santiago  
+Sakshi Agte  
+Maria Carrillo  
+Nehmat Sandhu   
+Ashwyn Yeo  
+
+Department of Materials Science & Engineering  
+University of California, Los Angeles (UCLA)
+
 
