@@ -60,9 +60,19 @@ Figures:
 ![Gold OM](images/gold_om.png)
 **Figure 1.** Optical microscope image of gold-plated ring showing average coating thickness.
 
+
 ![Silver OM](images/silver_om.png)
+**Figure 2.** Optical microscope image of a silver-plated ring showing silver coating thickness.
+
+
 ![Gold SEM](images/gold_sem.png)
+**Figure 3.** SEM cross-section image of gold-plated ring showing layer interface and coating depth.
+
+
 ![Silver SEM](images/silver_sem.png) 
+**Figure 4.** SEM cross-section image of silver-plated ring showing layer interface and coating depth.
+
+
 ---
 
 ## Phase II: Optimization & Simulation (MSE 140B)
