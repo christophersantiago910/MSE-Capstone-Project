@@ -174,8 +174,11 @@ Final materials were ranked using a Figure of Merit:
 | Sterling Silver | 0.000            |
 
 Figures:
-- `images/ashby_hardness.png`
-- `images/ashby_fatigue.png`
+
+![Ashby Hardness Plot](images/ashby_hardness.png)
+**Figure 8.** Ashby plot screening materials based on Vickers hardness and density, identifying candidates above 50 HV.
+
+
 
 ---
 
