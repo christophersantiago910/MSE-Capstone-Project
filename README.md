@@ -60,6 +60,8 @@ Figures:
 - `images/gold_om.png`, `images/silver_om.png`
 - `images/gold_sem.png`, `images/silver_sem.png`
 
+![Gold OM](images/gold_om.png)
+![Silver SEM](images/silver_sem.png) 
 ---
 
 ## Phase II: Optimization & Simulation (MSE 140B)
