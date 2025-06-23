@@ -178,6 +178,8 @@ Figures:
 ![Ashby Hardness Plot](images/ashby_hardness.png)
 **Figure 8.** Ashby plot screening materials based on Vickers hardness and density, identifying candidates above 50 HV.
 
+![Ashby Fatigue Plot](images/ashby_fatigue.png)
+**Figure 9.** Ashby plot showing fatigue strength vs. elongation; materials above 100 MPa and 10% strain were selected for further evaluation.
 
 
 ---
