@@ -106,8 +106,8 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 | 45         | 136  | 360    |
 
 Figures:
-- `images/fatigue_vs_time.png`
 ![Fatigue vs Time](images/fatigue_vs_time.png) 
+**Figure 5.** Fatigue life of gold- and silver-plated rings as a function of annealing time at 550°C. Gold-plated rings showed peak performance at 15 minutes.
 
 ---
 
