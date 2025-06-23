@@ -129,7 +129,7 @@ Figures:
 
 Used SolidWorks Simulation to replicate the experimental setup:
 
-- **Static Simulation:** Applied 20 N force to ring arm.
+- **Static Simulation:** Applied 10 N force to ring arm.
 - **Fatigue Life Prediction:** Simulated number of cycles before failure.
 
 **Simulated Cycles to Failure**
@@ -146,7 +146,11 @@ Used SolidWorks Simulation to replicate the experimental setup:
 Figures:
 - `images/static_stress.png`
 - `images/fatigue_life.png`
+![Static Stress Results](images/static_stress.png)
+**Figure 6.** Static stress simulation on the ring under 10 N applied force using SolidWorks. High stress concentration appears near the inner edge.
 
+![Fatigue Life Simulation](images/fatigue_life.png)
+**Figure 7.** Fatigue simulation result predicting failure after 257 cycles, closely matching experimental fatigue test results (~256 cycles).
 ---
 
 ## Material Screening & Selection
