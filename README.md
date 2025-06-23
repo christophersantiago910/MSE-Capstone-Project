@@ -57,10 +57,9 @@ This repository presents a comprehensive study of failure modes and material imp
 | Fatigue Life (baseline)       | ~343 cycles           | ~343 cycles            |
 
 Figures:
-- `images/gold_om.png`, `images/silver_om.png`
-- `images/gold_sem.png`, `images/silver_sem.png`
-
 ![Gold OM](images/gold_om.png)
+**Figure 1.** Optical microscope image of gold-plated ring showing average coating thickness.
+
 ![Silver OM](images/silver_om.png)
 ![Gold SEM](images/gold_sem.png)
 ![Silver SEM](images/silver_sem.png) 
