@@ -150,6 +150,8 @@ Figures:
 
 ![Fatigue Life Simulation](images/fatigue_life.png)
 **Figure 7.** Fatigue simulation result predicting failure after 257 cycles, closely matching experimental fatigue test results (~256 cycles).
+
+
 ---
 
 ## Material Screening & Selection
