@@ -61,6 +61,8 @@ Figures:
 - `images/gold_sem.png`, `images/silver_sem.png`
 
 ![Gold OM](images/gold_om.png)
+![Silver OM](images/silver_om.png)
+![Gold SEM](images/gold_sem.png)
 ![Silver SEM](images/silver_sem.png) 
 ---
 
