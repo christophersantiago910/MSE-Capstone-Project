@@ -144,8 +144,7 @@ Used SolidWorks Simulation to replicate the experimental setup:
 | Silver       | 114    |
 
 Figures:
-- `images/static_stress.png`
-- `images/fatigue_life.png`
+
 ![Static Stress Results](images/static_stress.png)
 **Figure 6.** Static stress simulation on the ring under 10 N applied force using SolidWorks. High stress concentration appears near the inner edge.
 
