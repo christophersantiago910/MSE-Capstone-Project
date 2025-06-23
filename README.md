@@ -107,6 +107,7 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 
 Figures:
 - `images/fatigue_vs_time.png`
+![Fatigue vs Time](images/fatigue_vs_time.png) 
 
 ---
 
