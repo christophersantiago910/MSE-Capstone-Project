@@ -199,7 +199,6 @@ Figures:
 ```
 ├── images/                 # Simulation, SEM, OM, Ashby plots
 ├── data/                   # Raw & processed experimental results
-├── scripts/                # Python scripts for Ashby plots
 ├── report/                 # Final report PDFs, figures
 └── README.md               # This file
 ```
