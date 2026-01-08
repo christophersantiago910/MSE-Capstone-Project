@@ -117,6 +117,11 @@ Utilizes the extention and retraction of a 12 V linear actuator using an Arduino
 ![Silver SEM](images/silver_sem.png) 
 **Figure 4.** SEM cross-section image of silver-plated ring showing layer interface and coating depth.
 
+![Fatigue Testing](images/seconds_before_break.png)
+**Figure 5.** Linear actuator applying cyclic 20N force to ring. 
+
+![Break](images/breaking_ring.png)
+**Figure 6.** Ring has reached failure after cyclic force applied by the linear actuator. 
 
 ---
 
@@ -152,7 +157,7 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 
 ### Figures:
 ![Fatigue vs Time](images/fatigue_vs_time.png) 
-**Figure 5.** Fatigue life of gold- and silver-plated rings as a function of annealing time at 550°C. Gold-plated rings showed peak performance at 15 minutes.
+**Figure 7.** Fatigue life of gold- and silver-plated rings as a function of annealing time at 550°C. Gold-plated rings showed peak performance at 15 minutes.
 
 ---
 
@@ -193,10 +198,10 @@ Used SOLIDWORKS FEA to replicate the linear actuator setup:
 Figures:
 
 ![Static Stress Results](images/static_stress.png)
-**Figure 6.** Static stress simulation on the ring under 10 N applied force using SolidWorks. High stress concentration appears near the inner edge.
+**Figure 8.** Static stress simulation on the ring under 10 N applied force using SolidWorks. High stress concentration appears near the inner edge.
 
 ![Fatigue Life Simulation](images/fatigue_life.png)
-**Figure 7.** Fatigue simulation result predicting failure after 257 cycles, closely matching experimental fatigue test results (~256 cycles).
+**Figure 9.** Fatigue simulation result predicting failure after 257 cycles, closely matching experimental fatigue test results (~256 cycles).
 
 
 ---
@@ -223,10 +228,10 @@ Final materials were ranked using a Figure of Merit:
 ### Figures:
 
 ![Ashby Hardness Plot](images/ashby_hardness.png)
-**Figure 8.** Ashby plot screening materials based on Vickers hardness and density. Requirement was a minimum hardness of 50 HV.
+**Figure 10.** Ashby plot screening materials based on Vickers hardness and density. Requirement was a minimum hardness of 50 HV.
 
 ![Ashby Fatigue Plot](images/ashby_fatigue.png)
-**Figure 9.** Ashby plot screening materials based on fatigue strength and elongation. Requirement was a minimum of 100 MPa and 10% strain. 
+**Figure 11.** Ashby plot screening materials based on fatigue strength and elongation. Requirement was a minimum of 100 MPa and 10% strain. 
 
 
 ---
@@ -244,7 +249,7 @@ Final materials were ranked using a Figure of Merit:
 
 ```
 ├── images/                 # Simulation, SEM, OM, Ashby plots
-└── README.md               # This file
+└── README.md               # Overview
 ```
 
 ---
@@ -252,6 +257,7 @@ Final materials were ranked using a Figure of Merit:
 ## Authors
 
 Christopher Santiago Garcia 
+
 Sakshi Agte  
 Maria Carrillo  
 Nehmat Sandhu   
