@@ -54,7 +54,7 @@ This repository presents a comprehensive study of failure modes and material imp
 | Average Density (g/cm³)       | 9.799                 | 9.720                  |
 | OM Plating Thickness (μm)     | 15.24 ± 8.25          | 22.27 ± 5.29           |
 | SEM Plating Thickness (μm)    | 11.39 ± 3.18          | 21.30 ± 7.00           |
-| Fatigue Life (baseline)       | ~343 cycles           | ~343 cycles            |
+| Fatigue Life (baseline)       | ~343 cycles           | ~256 cycles            |
 
 ### Figures (Note - All images collected from testing not included in this repository):
 ![Gold OM](images/gold_om.png)
@@ -86,7 +86,7 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 - **Time:** 1, 5, 10, 15, 30, 45 minutes
 - **Cooling:** Air-cooled
 
-**Hardness vs Time**
+**Hardness at each Time**
 
 | Annealing Time (min) | Hardness (HV) |
 |----------------------|----------------|
@@ -94,7 +94,7 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 | 30                   | 128.3          |
 | 45                   | 70.7           |
 
-**Fatigue Life (Cycles)**
+**Fatigue Life of Annealed Rings using Linear Actuator (Cycles)**
 
 | Time (min) | Gold | Silver |
 |------------|------|--------|
@@ -105,7 +105,7 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 | 30         | 119  | 316    |
 | 45         | 136  | 360    |
 
-Figures:
+### Figures:
 ![Fatigue vs Time](images/fatigue_vs_time.png) 
 **Figure 5.** Fatigue life of gold- and silver-plated rings as a function of annealing time at 550°C. Gold-plated rings showed peak performance at 15 minutes.
 
@@ -127,10 +127,10 @@ Figures:
 
 ### Finite Element Analysis
 
-Used SolidWorks Simulation to replicate the experimental setup:
+Used SolidWorks Simulation to replicate the linear actuator setup:
 
-- **Static Simulation:** Applied 10 N force to ring arm.
-- **Fatigue Life Prediction:** Simulated number of cycles before failure.
+- **Static Simulation:** Applied a singular 10 N force to ring arm, identical to the force applied by one extentention of the linear actuator.
+- **Fatigue Life Prediction:** Cyclic 10 N force applied to ring arm, identical to the testing setup in Phase 1. 
 
 **Simulated Cycles to Failure**
 
@@ -158,7 +158,7 @@ Figures:
 
 Used Ashby plots to screen and rank materials for:
 - Minimum 50 HV hardness
-- Minimum 100 MPa fatigue strength @ 10⁷ cycles
+- Minimum 100 MPa fatigue strength at 10⁷ cycles
 - Minimum 10% elongation
 
 Final materials were ranked using a Figure of Merit:
@@ -173,23 +173,22 @@ Final materials were ranked using a Figure of Merit:
 | Zinc Alloy      | 0.011            |
 | Sterling Silver | 0.000            |
 
-Figures:
+### Figures:
 
 ![Ashby Hardness Plot](images/ashby_hardness.png)
-**Figure 8.** Ashby plot screening materials based on Vickers hardness and density, identifying candidates above 50 HV.
+**Figure 8.** Ashby plot screening materials based on Vickers hardness and density. Requirement was a minimum hardness of 50 HV.
 
 ![Ashby Fatigue Plot](images/ashby_fatigue.png)
-**Figure 9.** Ashby plot showing fatigue strength vs. elongation; materials above 100 MPa and 10% strain were selected for further evaluation.
+**Figure 9.** Ashby plot screening materials based on fatigue strength and elongation. Requirement was a minimum of 100 MPa and 10% strain. 
 
 
 ---
 
 ## Key Takeaways
 
-- **Annealing** significantly improves fatigue life if optimized (~15 min best).
-- **Silver rings** show more consistent fatigue performance; gold rings are more sensitive to heat treatment.
+- **Annealing** improves fatigue life if optimized (15 min best).
 - **Brass** remains the best choice for balancing cost, machinability, and performance.
-- **Simulation and experiment** closely matched (257 vs 256 cycles).
+- **Linear actuator setup and FEA simulations** closely matched each other (257 vs 256 cycles).
 - **Material ranking** confirmed brass outperforms others in cost-performance tradeoff.
 
 ---
@@ -198,8 +197,6 @@ Figures:
 
 ```
 ├── images/                 # Simulation, SEM, OM, Ashby plots
-├── data/                   # Raw & processed experimental results
-├── report/                 # Final report PDFs, figures
 └── README.md               # This file
 ```
 
@@ -207,7 +204,7 @@ Figures:
 
 ## Authors
 
-Christopher Santiago  
+Christopher Santiago Garcia 
 Sakshi Agte  
 Maria Carrillo  
 Nehmat Sandhu   
@@ -215,5 +212,3 @@ Ashwyn Yeo
 
 Department of Materials Science & Engineering  
 University of California, Los Angeles (UCLA)
-
-
