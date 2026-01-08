@@ -127,7 +127,9 @@ Objective: Determine how controlled heat treatments affect ductility, grain stru
 
 ### Finite Element Analysis
 
-Used SolidWorks Simulation to replicate the linear actuator setup:
+The ring was modeled in SOLIDWORKS. CAD ring had extremely similar density, mass, and volume measurements to the actual rings used in this study. 
+
+Used SOLIDWORKS FEA to replicate the linear actuator setup:
 
 - **Static Simulation:** Applied a singular 10 N force to ring arm, identical to the force applied by one extentention of the linear actuator.
 - **Fatigue Life Prediction:** Cyclic 10 N force applied to ring arm, identical to the testing setup in Phase 1. 
