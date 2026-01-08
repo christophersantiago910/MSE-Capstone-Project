@@ -26,7 +26,7 @@
 
 ## Project Overview
 
-This repository presents a comprehensive study of failure modes and material improvements for low-cost, gold- and silver-plated adjustable brass rings. These rings suffer from premature failure due to repeated mechanical deformation during size adjustments. Over two academic quarters, this project explored the mechanical behavior, compositional makeup, microstructure, and fatigue performance of these rings, followed by processing optimizations using annealing and design validation via finite element simulations.
+This repository presents a comprehensive study of failure modes and material improvements for low-cost, gold and silver plated adjustable brass rings. These rings often have premature failure due to repeated mechanical deformation during size adjustments. Over two academic quarters, this project explored the mechanical behavior, compositional makeup, microstructure, and fatigue performance of these rings, followed by optimization using annealing and design validation. 
 
 ---
 
