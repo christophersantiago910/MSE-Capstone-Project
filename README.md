@@ -46,6 +46,51 @@ This repository presents a study of failure modes and material improvements for 
 - **Optical Microscopy & SEM (ASTM B487, B748):** Measured plating thickness and surface integrity.
 - **Fatigue Testing:** Custom Arduino-controlled linear actuator applied repeated uniaxial tensile loads to simulate daily ring resizing.
 
+### Fatigue Testing Design
+Utilizes the extention and retraction of a 12 V linear actuator using an Arduino Uno R3 and a dual relay module. The system reverses the polarity of the actuator using the relays which is controlled by an Arduino loop program. 
+
+**Power Architecture**
+
+| Voltage | Devices Powered |
+|------|------------------|
+| 12 V | Linear Actuator through the dual relay module |
+| 5 V | Arduino Uno R3 |
+| GND | Common reference for all modules |
+
+**System Overview**
+
+- **Arduino Uno R3**
+  - Controls relay to reverse the polarity of the actuator. 
+- **Dual Relay Module**
+  - Relay 1 switches polarity for red wire of actuator
+  - Relay 2 switches polarity for black wire of actuator
+  - Drives the extraction and retraction
+- **12 V Linear Actuator**
+  - Expands or retracts depending on polarity
+- **DC Power Supply**
+  - Supplies 12 V of power to components
+- **5 V outlet supply**
+  - Supplies 5 V to power microcontroller
+
+**Wiring Configuration**
+
+**Relay Module to Actuator**
+- Relay 1 COM → Actuator Red Wire
+- Relay 2 COM → Actuator Black Wire
+- Relay 1 NO → +12V, NC → GND  
+- Relay 2 NO → GND, NC → +12V
+
+**Arduino to Relay Module**
+- IN1 → D8  
+- IN2 → D9 
+- VCC → 5V (from Arduino)  
+- GND → Arduino GND
+
+**Power Supply**
+- +12V → Relay NO (R1) and NC (R2)  
+- GND → Relay NC (R1) and NO (R2)  
+
+
 ### Key Results
 
 | Test                          | Gold-Plated Ring     | Silver-Plated Ring   |
