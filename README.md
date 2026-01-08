@@ -26,7 +26,7 @@
 
 ## Project Overview
 
-This repository presents a comprehensive study of failure modes and material improvements for low-cost, gold and silver plated adjustable brass rings. These rings often have premature failure due to repeated mechanical deformation during size adjustments. Over two academic quarters, this project explored the mechanical behavior, compositional makeup, microstructure, and fatigue performance of these rings, followed by optimization using annealing and design validation. 
+This repository presents a comprehensive study of failure modes and material improvements for low-cost, gold and silver plated adjustable brass rings. These rings often have premature failure due to repeated size adjustments which results in mechanical deformation. Over two academic quarters, this project explored the mechanical behavior, compositional makeup, microstructure, and fatigue performance of these rings, followed by optimization using annealing and design validation. 
 
 ---
 
@@ -56,7 +56,7 @@ This repository presents a comprehensive study of failure modes and material imp
 | SEM Plating Thickness (μm)    | 11.39 ± 3.18          | 21.30 ± 7.00           |
 | Fatigue Life (baseline)       | ~343 cycles           | ~343 cycles            |
 
-Figures:
+### Figures (Note - All images collected from testing not included in this repository):
 ![Gold OM](images/gold_om.png)
 **Figure 1.** Optical microscope image of gold-plated ring showing average coating thickness.
 
